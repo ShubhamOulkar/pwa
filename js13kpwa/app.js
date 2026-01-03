@@ -26,7 +26,7 @@ document.getElementById('content').innerHTML = content;
 
 // Registering Service Worker
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./js13kpwa/sw.js');
+  navigator.serviceWorker.register('/pwa/js13kpwa/sw.js');
 }
 
 // Requesting permission for Notifications after clicking on the button
@@ -44,7 +44,7 @@ function randomNotification() {
   const randomItem = Math.floor(Math.random() * games.length);
   const notifTitle = games[randomItem].name;
   const notifBody = `Created by ${games[randomItem].author}.`;
-  const notifImg = `data/img/${games[randomItem].slug}.jpg`;
+  const notifImg = `/pwa/js13kpwa/data/img/${games[randomItem].slug}.jpg`;
   const options = {
     body: notifBody,
     icon: notifImg,

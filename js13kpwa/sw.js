@@ -3,28 +3,28 @@ self.importScripts('data/games.js');
 // Files to cache
 const cacheName = 'js13kPWA-v1';
 const appShellFiles = [
-  '/',
-  '/index.html',
-  '/app.js',
-  '/style.css',
-  '/fonts/graduate.eot',
-  '/fonts/graduate.ttf',
-  '/fonts/graduate.woff',
-  '/favicon.ico',
-  '/img/js13kgames.png',
-  '/img/bg.png',
-  '/icons/icon-32.png',
-  '/icons/icon-64.png',
-  '/icons/icon-96.png',
-  '/icons/icon-128.png',
-  '/icons/icon-168.png',
-  '/icons/icon-192.png',
-  '/icons/icon-256.png',
-  '/icons/icon-512.png',
+  '/pwa/js13kpwa/',
+  '/pwa/js13kpwa/index.html',
+  '/pwa/js13kpwa/app.js',
+  '/pwa/js13kpwa/style.css',
+  '/pwa/js13kpwa/fonts/graduate.eot',
+  '/pwa/js13kpwa/fonts/graduate.ttf',
+  '/pwa/js13kpwa/fonts/graduate.woff',
+  '/pwa/js13kpwa/favicon.ico',
+  '/pwa/js13kpwa/img/js13kgames.png',
+  '/pwa/js13kpwa/img/bg.png',
+  '/pwa/js13kpwa/icons/icon-32.png',
+  '/pwa/js13kpwa/icons/icon-64.png',
+  '/pwa/js13kpwa/icons/icon-96.png',
+  '/pwa/js13kpwa/icons/icon-128.png',
+  '/pwa/js13kpwa/icons/icon-168.png',
+  '/pwa/js13kpwa/icons/icon-192.png',
+  '/pwa/js13kpwa/icons/icon-256.png',
+  '/pwa/js13kpwa/icons/icon-512.png',
 ];
 const gamesImages = [];
 for (let i = 0; i < games.length; i++) {
-  gamesImages.push(`data/img/${games[i].slug}.jpg`);
+  gamesImages.push(`/pwa/js13kpwa/data/img/${games[i].slug}.jpg`);
 }
 const contentToCache = appShellFiles.concat(gamesImages);
 
